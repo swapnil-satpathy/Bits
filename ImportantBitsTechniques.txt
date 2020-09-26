@@ -1,0 +1,30 @@
+1) How to set a bit in the number 'num' : 
+First we left shift '1' to n position via (1 << n)
+Then, use 'OR' operator to set bit at that position.
+'OR' operator is used because it will set the bit even if the bit is unset previously in binary representation of number 'num'.
+
+2) Flipping the bits of a number: It can be done by a simple way, just simply subtract the number from the value obtained when all the bits are equal to 1 
+Number : Given Number
+Value  : A number with all bits set in given number.
+Flipped number = Value – Number.
+
+Example : 
+Number = 23,
+Binary form: 10111;
+After flipping digits number will be: 01000;
+Value: 11111 = 31;
+
+3) We can easily swap two numbers say a and b by using the XOR(^) operator by applying below operations:
+
+a=a^b;
+b=b^a;
+a=a^b;
+
+4) Given a number n , we can find the most significant bit in the given number by doing log2(N)
+
+5) Given a number N, the task is to find the XOR of all numbers from 1 to N.
+i) Find the reminder of N by moduling with it 4
+ii) if rem=0, then the xor will be same as N
+iii) if rem=1, then xor will be 1
+iv) if rem=2,then xor will be N+1
+v) if rem=3, then xor will be 0
